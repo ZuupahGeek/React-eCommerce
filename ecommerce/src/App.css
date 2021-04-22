@@ -21,11 +21,6 @@ a {
 .nav-link {
   color: #fff;
 }
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .nav-logo {
   display: flex;
   align-items: center;
@@ -33,8 +28,11 @@ a {
 .nav-logo h2 {
   margin-right: 4rem;
 }
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  width: 10rem;
+.navbar ul li {
+  list-style: none;
 }
+
+/* Home page / products */
+/* .card-width {
+  width: 39rem;
+} */
