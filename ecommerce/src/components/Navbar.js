@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import ShoppingCart from './shoppingCart/ShoppingCart'
 
 
 
@@ -32,8 +33,8 @@ const Navbar = () => {
                 <i className="fas fa-luggage-cart"></i>
               </a>
             {/* Dropdown menu */}
-              <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-               <p>Shopping Cart</p>
+              <ul className="dropdown-menu dropdown-menu-end dropdown-width" aria-labelledby="navbarDropdown">
+               <ShoppingCart />
               </ul>
             </li>
           </ul>

@@ -31,8 +31,13 @@ a {
 .navbar ul li {
   list-style: none;
 }
+.dropdown-width {
+  min-width: 20rem;
+}
 
-/* Home page / products */
-/* .card-width {
-  width: 39rem;
-} */
+
+
+/* Shopping Cart */
+.img-width {
+  width: 80px;
+}
