@@ -6,7 +6,7 @@ const actiontypes = () => {
     shoppingCart: {
       add: 'ADD_TO_CART',
       subtract: 'SUBTRACT_FROM_CART',
-      delete: 'DELETE_FROM_CART'
+      delete: 'DELETE_PRODUCT'
     }
   }
 }

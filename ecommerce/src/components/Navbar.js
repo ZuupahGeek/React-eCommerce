@@ -9,7 +9,7 @@ import ShoppingCart from './shoppingCart/ShoppingCart'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar mb-4">
       <div className="container">
         <div className="nav-logo ">
           <NavLink className="navbar-brand text-white" to="/">Yummy<i className="fas fa-pizza-slice"></i></NavLink>
@@ -22,7 +22,7 @@ const Navbar = () => {
           <ul className="d-flex">
             <li><NavLink to="/user" className="nav-link"><i className="fas fa-user-tie"></i></NavLink></li>
             <li className="nav-item dropdown">
-              <a
+              <span
                 className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
@@ -31,7 +31,7 @@ const Navbar = () => {
                 aria-expanded="false"
               >
                 <i className="fas fa-luggage-cart"></i>
-              </a>
+              </span>
             {/* Dropdown menu */}
               <ul className="dropdown-menu dropdown-menu-end dropdown-width" aria-labelledby="navbarDropdown">
                <ShoppingCart />

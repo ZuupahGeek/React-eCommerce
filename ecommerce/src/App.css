@@ -12,6 +12,14 @@ html, body {
 a {
   text-decoration: none;
 }
+.btn-blue {
+  background: cadetblue;
+  color: #fff;
+}
+.btn-red {
+  background: rgb(189, 29, 61);
+  color: white;
+}
 
 /* Navbar */
 .navbar {
@@ -39,5 +47,5 @@ a {
 
 /* Shopping Cart */
 .img-width {
-  width: 80px;
+  width: 100px;
 }
