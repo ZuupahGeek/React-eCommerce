@@ -8,7 +8,7 @@ const Home = () => {
 
 
   const dispatch = useDispatch();
-  const getProductsReducer = useSelector(state => state.getProductsReducer)
+  const getProductsReducer = useSelector(state => state.getProductsReducer.products)
 
   useEffect(() => {
     dispatch(getProducts())

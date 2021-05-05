@@ -13,7 +13,26 @@ export const getProducts = () => {
 
 export const setProducts = products => {
   return {
-    type: actiontypes().getProducts.set,
+    type: actiontypes().getProducts.setProducts,
     payload: products
+  }
+}
+
+export const getOneProduct = _id => {
+
+  return async dispatch => {
+    // dispatch(loading(true))
+
+    const res = await axios.get(`http://localhost:9999/api/products/${_id}`);
+    
+    dispatch(setProduct(res.data));
+    // dispatch(loading(false));
+  }
+}
+
+export const setProduct = product => {
+  return {
+    type: actiontypes().getProducts.setProduct,
+    payload: product
   }
 }

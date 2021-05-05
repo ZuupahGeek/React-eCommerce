@@ -20,6 +20,9 @@ a {
   background: rgb(189, 29, 61);
   color: white;
 }
+.text-red {
+  color: rgb(189, 29, 61);
+}
 
 /* Navbar */
 .navbar {
@@ -48,4 +51,10 @@ a {
 /* Shopping Cart */
 .img-width {
   width: 100px;
+}
+
+
+/* Product Details */
+.details-image {
+  width: 30rem;
 }

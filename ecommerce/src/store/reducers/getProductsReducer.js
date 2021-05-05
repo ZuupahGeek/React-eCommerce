@@ -1,12 +1,22 @@
 import actiontypes from '../actiontypes'
 
-const initState = null;
+let initState = {
+  products: null,
+  product: null,
+}
 
 const getProductsReducer = (state = initState, action) => {
   switch(action.type) {
-    case actiontypes().getProducts.set:
-      state = action.payload
-    return state
+    case actiontypes().getProducts.setProducts:
+      return {
+        ...state,
+        products: action.payload
+      }
+    case actiontypes().getProducts.setProduct:
+      return {
+        ...state,
+        product: action.payload
+      }
 
 
     default:
