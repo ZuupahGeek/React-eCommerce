@@ -3,7 +3,7 @@ const actiontypes = () => {
     getProducts: {
       getProducts: 'GET_PRODUCTS',
       setProducts: 'SET_PRODUCTS',
-      setProduct: 'SET_PRODUCT'
+      setProduct: 'SET_PRODUCT',
     },
     shoppingCart: {
       add: 'ADD_TO_CART',

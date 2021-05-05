@@ -2,8 +2,9 @@ import actiontypes from '../actiontypes'
 
 const initState = {
   shoppingCart: [],
-  totalCartQuantity: 0, // antal av en produkt
-  totalCartAmount: 0, // antal produkter totalt
+  totalCartQuantity: 0, // antal produkter i kundvagnen
+  totalCartAmount: 0, // total kostnad
+ 
 }
 
 
@@ -27,7 +28,7 @@ const shoppingCartReducer = (state = initState, action) => {
 
 
         state.totalCartAmount = getTotalAmount(state.shoppingCart)
-        state.totalCartquantity = getTotalQuantity(state.shoppingCart)
+        state.totalCartQuantity = getTotalQuantity(state.shoppingCart)
 
       }
         catch(err) {console.log(err)}
@@ -44,7 +45,7 @@ const shoppingCartReducer = (state = initState, action) => {
          
 
           state.totalCartAmount = getTotalAmount(state.shoppingCart)
-          state.totalCartquantity = getTotalQuantity(state.shoppingCart)
+          state.totalCartQuantity = getTotalQuantity(state.shoppingCart)
         }
         catch(err) {console.log(err)}
         return state
@@ -54,7 +55,7 @@ const shoppingCartReducer = (state = initState, action) => {
           state.shoppingCart = state.shoppingCart.filter(product => product._id !== action.payload)
 
           state.totalCartAmount = getTotalAmount(state.shoppingCart)
-          state.totalCartquantity = getTotalQuantity(state.shoppingCart)
+          state.totalCartQuantity = getTotalQuantity(state.shoppingCart)
           return state
 
         default:
@@ -79,5 +80,9 @@ const getTotalAmount = ShoppingCart => {
   });
   return total;
 }
+
+
+
+
 
 export default shoppingCartReducer;

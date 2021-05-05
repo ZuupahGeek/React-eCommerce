@@ -3,6 +3,7 @@ import actiontypes from '../actiontypes'
 let initState = {
   products: null,
   product: null,
+  loading: true
 }
 
 const getProductsReducer = (state = initState, action) => {

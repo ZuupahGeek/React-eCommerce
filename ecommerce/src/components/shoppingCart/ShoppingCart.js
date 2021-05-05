@@ -13,12 +13,12 @@ const ShoppingCart = () => {
     </div>
   )
   const notEmptyCart = (
-    <div className="">
-      <div className="total-price">
-        Total amount: <span>{totalCartAmount}</span>
+    <div className="text-red">
+      <div className="total-price p-1">
+        Total amount: <span>{totalCartAmount} SEK</span>
       </div>
       <div>
-        <button className="btn btn-sm btn-primary mb-2">Check out</button>
+        <button className="btn btn-sm btn-primary m-2">Check out</button>
       </div>
     </div>
   )
