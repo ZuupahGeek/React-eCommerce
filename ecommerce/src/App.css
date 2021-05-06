@@ -23,6 +23,10 @@ a {
 .text-red {
   color: rgb(189, 29, 61);
 }
+.form-border {
+  border-bottom: 1px solid #333;
+  
+}
 
 /* Navbar */
 .navbar {

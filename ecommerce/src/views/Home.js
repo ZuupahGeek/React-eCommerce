@@ -1,31 +1,12 @@
-import {useEffect} from 'react'
-import { useDispatch, useSelector } from "react-redux";
-import ProductCard from '../components/ProductCard'
-import {getProducts} from '../store/actions/getProductsActions'
-
-
+import React from 'react'
+import {NavLink} from 'react-router-dom';
 const Home = () => {
-
-
-  const dispatch = useDispatch();
-  const getProductsReducer = useSelector(state => state.getProductsReducer.products)
-
-  useEffect(() => {
-    dispatch(getProducts())
-  }, [dispatch])
-
-  
   return (
     <div className="container">
-      <div className="row row-cols-1 row-cols-md-3">
-        
-        {
-          getProductsReducer && getProductsReducer.map(product => (
-            <ProductCard key={product._id} product={product}/>
-          ))
-        }
-
-      </div>
+      <NavLink to="/admin">Admin-page</NavLink> <br/>
+      <NavLink to="/login">Login</NavLink> <br/>
+      <NavLink to="/register">Register</NavLink> <br/>
+      <NavLink to="/orders">Orders</NavLink> <br/>
     </div>
   )
 }
