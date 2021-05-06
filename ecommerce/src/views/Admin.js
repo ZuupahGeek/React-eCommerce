@@ -1,9 +1,11 @@
 import React from 'react'
+import UserList from '../components/adminPage/UserList'
+
 
 const Admin = () => {
   return (
     <div>
-      <h2>Admin Page</h2>
+      <UserList />
     </div>
   )
 }

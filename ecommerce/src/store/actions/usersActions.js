@@ -11,7 +11,7 @@ export const getUsers = () => {
 
 export const setUsers = users => {
   return {
-    type: actiontypes.users.setUsers,
+    type: actiontypes().users.setUsers,
     payload: users
   }
 }

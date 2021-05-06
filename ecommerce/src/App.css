@@ -25,7 +25,10 @@ a {
 }
 .form-border {
   border-bottom: 1px solid #333;
-  
+}
+.bg-blue {
+  background: cadetblue;
+  color: #fff;
 }
 
 /* Navbar */
